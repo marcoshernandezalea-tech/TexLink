@@ -1,0 +1,34 @@
+<title>TexLink CRM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+/*@@CSS@@*/
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><label class="logo-slot" id="logo-slot" for="logofile" title="Cambiar el logo"></label><input id="logofile" type="file" accept="image/*" hidden><h1>Tex<b>Link</b> CRM</h1><span id="sub">Cargando clientes…</span></div>
+    <div class="tools">
+      <label class="muted" for="camp" hidden>Campaña</label>
+      <select id="camp" aria-label="Campaña">
+        <option value="all">Todas las campañas</option>
+        <option value="2">Campaña 2 (octubre)</option>
+        <option value="1">Campaña 1 (antigua)</option>
+        <option value="3">Añadidos a mano</option>
+        <option value="4">Importados de Meta</option>
+      </select>
+      <input id="q" type="search" placeholder="Buscar cliente o etiqueta…" aria-label="Buscar">
+    </div>
+  </header>
+  <div id="kpis" class="kpis" aria-live="polite"></div>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <main id="view"></main>
+</div>
+<div id="drawer-root"></div>
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script>
+/*@@JS@@*/
+</script>
