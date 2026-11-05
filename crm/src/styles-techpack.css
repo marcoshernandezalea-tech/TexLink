@@ -1,0 +1,16 @@
+/* tech packs */
+.tp-item{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.tp-name{color:var(--accent);font-weight:600;overflow-wrap:anywhere;text-decoration:none}
+.tp-name:hover{text-decoration:underline}
+.tp-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tp-link{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tp-link input{flex:1 1 200px;min-width:0;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:8px 12px;min-height:36px}
+.tp-link input::placeholder{color:var(--ink-3)}
+.tp-row{display:grid;grid-template-columns:minmax(150px,280px) minmax(0,1fr) auto;gap:6px 18px;align-items:center;padding:12px 18px;margin-bottom:8px;background:var(--panel);border:1px solid var(--line);border-radius:12px;cursor:pointer;backdrop-filter:blur(10px)}
+.tp-row:hover{border-color:var(--line-2)}
+.tp-files{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.tp-files a.chip{text-decoration:none;color:var(--accent);overflow-wrap:anywhere}
+.tp-files a.chip:hover{border-color:var(--line-2)}
+@media (max-width:620px){
+  .tp-row{grid-template-columns:minmax(0,1fr) auto} .tp-row .tp-files{grid-column:1 / -1;grid-row:2}
+}

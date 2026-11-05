@@ -7,6 +7,7 @@ const dir = path.dirname(fileURLToPath(import.meta.url));
 const read = (f) => fs.readFileSync(path.join(dir, f), "utf8");
 const jsFiles = fs.readdirSync(path.join(dir, "src/js")).filter((f) => f.endsWith(".js")).sort();
 const js = jsFiles.map((f) => read("src/js/" + f)).join("\n");
-const out = read("src/index.template.html").replace("/*@@CSS@@*/", () => read("src/styles.css")).replace("/*@@JS@@*/", () => js);
+const css = ["src/styles.css", "src/styles-techpack.css"].map(read).join("\n");
+const out = read("src/index.template.html").replace("/*@@CSS@@*/", () => css).replace("/*@@JS@@*/", () => js);
 fs.writeFileSync(path.join(dir, "index.html"), out);
 console.log("index.html generado:", out.length, "caracteres");
