@@ -26,4 +26,5 @@ Después se publica `crm/index.html` como Artifact con estas capacidades: `db`, 
 - Clasificar, pegar texto y redactar mensajes usan Claude desde la página, con permiso del usuario.
 - Los ids de lead son `c1-r<fila>` y `c2-r<fila>` (campaña y fila de la hoja). **No reordenes filas de las hojas.**
 - **Tech packs:** cada ficha tiene una caja para subir archivos (PDF, imágenes, CSV o texto, hasta 20 MB) y para guardar enlaces de Drive o WeTransfer. Los archivos viven en el almacenamiento del Artifact (`assets`); en el cliente solo se guarda su id (`tp`) y los enlaces (`tpLinks`). Solo quien puede editar el Artifact sube archivos. La pestaña «Tech packs» lista quién dice tenerlo y aún falta guardar.
+- **Responsable:** por ahora todos los clientes los lleva Lucas (`RESP_DEFAULT` en `03c-responsable.js`). Se cambia uno a uno en la ficha, donde se guarda en el campo `resp`, y se filtra desde la cabecera. El responsable de la hoja de Google se ignora.
 - «Cierre» muestra la cercanía al cierre según la fase: nuevo 10 %, en contacto 35 %, reunión 60 %, presupuesto 82 %, ganado 100 %.

@@ -1,0 +1,2 @@
+/* responsable */
+.resp{font:600 10px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);border:1px solid rgba(139,123,255,.45);border-radius:5px;padding:0 6px;background:rgba(139,123,255,.1)}
