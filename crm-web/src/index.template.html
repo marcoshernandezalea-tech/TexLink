@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
+<script>
+/* Si se entra por /crm (sin barra final), las rutas relativas deben seguir colgando de /crm/. */
+(function(){var p=location.pathname;if(!/\/$|\.html?$/.test(p)){var b=document.createElement("base");b.href=p+"/";document.head.appendChild(b);}})();
+</script>
 <title>TexLink CRM</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +58,7 @@
 <div id="toast" class="toast" role="status" hidden></div>
 <input id="tpfile" type="file" hidden>
 
-<script src="config.js"></script>
+<script>document.write('<script src="config.js"><\/script>');</script>
 <script>
 /*@@ADAPTER@@*/
 </script>

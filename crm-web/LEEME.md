@@ -40,7 +40,7 @@ Si más adelante cambias el código: **Implementar → Gestionar implementacione
 1. En el proyecto, ejecuta `node crm-web/build.mjs`. Crea la carpeta `crm-web/dist/crm/` con `index.html` y `config.js`.
 2. Abre `config.js` y pega la dirección del servidor en `api`. Opcional: la ruta del logo de tu web en `logo`.
 3. Copia la carpeta `crm` dentro de la carpeta pública de tu web (la que se publica tal cual: `public/` en Vite, Next o Astro, o la raíz en una web estática) y publica la web como siempre.
-4. Queda en `https://www.texlink.es/crm/`. Si te da un error 404, prueba `/crm/index.html`.
+4. Queda en `https://www.texlink.es/crm/` y también abre en `/crm`. Es una carpeta nueva: no toca `/admin` ni ninguna otra página. Escribe `crm` en minúsculas, porque algunos servidores distinguen mayúsculas. Si te da un error 404, prueba `/crm/index.html`.
 5. Añade un enlace discreto en el menú o el pie de página. La página lleva `noindex`, así que Google no la lista.
 
 Si tu web la mantiene Claude Code, pídele esto: «Copia la carpeta `crm-web/dist/crm` a la carpeta pública de la web como `crm` y añade en el pie de página un enlace «Acceso equipo» a `/crm/`. No toques nada más».
