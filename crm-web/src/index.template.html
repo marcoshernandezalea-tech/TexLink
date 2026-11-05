@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>TexLink CRM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+/*@@CSS@@*/
+</style>
+</head>
+<body>
+<div id="login" class="login" role="dialog" aria-modal="true" aria-labelledby="login-t" hidden>
+  <form id="login-form" class="login-box">
+    <div class="login-brand"><img id="login-logo" alt="" hidden><h1 id="login-t">Tex<b>Link</b> CRM</h1></div>
+    <label for="login-user">Usuario</label>
+    <input id="login-user" name="username" type="text" autocomplete="username" autocapitalize="none" required>
+    <label for="login-pass">Contraseña</label>
+    <input id="login-pass" name="password" type="password" autocomplete="current-password" required>
+    <label class="login-check" for="login-remember"><input id="login-remember" type="checkbox"> Mantener la sesión en este equipo</label>
+    <button id="login-btn" class="btn pri" type="submit">Entrar</button>
+    <p id="login-err" class="warnbox" role="alert" hidden></p>
+  </form>
+</div>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><label class="logo-slot" id="logo-slot" for="logofile" title="Cambiar el logo"></label><input id="logofile" type="file" accept="image/*" hidden><h1>Tex<b>Link</b> CRM</h1><span id="sub">Cargando clientes…</span></div>
+    <div class="tools">
+      <label class="muted" for="camp" hidden>Campaña</label>
+      <select id="camp" aria-label="Campaña">
+        <option value="all">Todas las campañas</option>
+        <option value="2">Campaña 2 (octubre)</option>
+        <option value="1">Campaña 1 (antigua)</option>
+        <option value="3">Añadidos a mano</option>
+        <option value="4">Importados de Meta</option>
+      </select>
+      <select id="resp" aria-label="Responsable">
+        <option value="">Todos los responsables</option>
+        <option value="Lucas">Lucas</option>
+        <option value="Marcos">Marcos</option>
+      </select>
+      <input id="q" type="search" placeholder="Buscar cliente o etiqueta…" aria-label="Buscar">
+    </div>
+  </header>
+  <div id="kpis" class="kpis" aria-live="polite"></div>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <main id="view"></main>
+</div>
+<div id="drawer-root"></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<input id="tpfile" type="file" hidden>
+
+<script src="config.js"></script>
+<script>
+/*@@ADAPTER@@*/
+</script>
+<script>
+/*@@JS@@*/
+</script>
+</body>
+</html>
