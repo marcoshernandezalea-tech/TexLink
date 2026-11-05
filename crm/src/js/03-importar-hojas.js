@@ -79,7 +79,7 @@ async function exportCsv(){
   var q=function(v){v=String(v==null?"":v);return /[",\n;]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
   var lines=[cols.join(",")].concat(all().filter(function(l){return !l.dup;}).sort(byScore).map(function(l){var r=l.raw||{};
     return [l.src,l.camp,l.name,l.brand,SEGS[l.seg]||"",(STAGE[l.stage]||{}).label||"",l.score,(l.tags||[]).join(" "),l.reason,l.next,r.email,r.tel,r.ciudad].map(q).join(",");}));
-  try{await dl.save({filename:"texlink-clientes-"+todayISO()+".csv",data:"﻿"+lines.join("\n")});toast("Exportado.");}
+  try{await dl.save({filename:"texlink-clientes-"+todayISO()+".csv",data:String.fromCharCode(0xFEFF)+lines.join("\n")});toast("Exportado.");}
   catch(e){if(e&&e.code!=="declined")toast("No se pudo exportar.");}
 }
 
