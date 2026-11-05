@@ -1,2 +1,3 @@
-# Se genera con `node crm/build.mjs`
+# Se genera con `node crm/build.mjs` y `node crm-web/build.mjs`
 crm/index.html
+crm-web/dist/
