@@ -13,3 +13,26 @@ img{max-width:100%}
 .login-box label.login-check{display:flex;gap:8px;align-items:center;text-transform:none;letter-spacing:0;font:400 13px var(--f-body);color:var(--ink-2)}
 .login-box .btn.pri{min-height:44px;margin-top:4px}
 #logout{margin-left:4px}
+
+/* fichas del formulario */
+.ficha{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;display:grid;gap:10px;backdrop-filter:blur(10px)}
+.fi-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.fi-who{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;min-width:0}
+.fi-who b{font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.fi-who small{flex-basis:100%;color:var(--ink-3);font:500 11.5px var(--f-mono)}
+.chip.ref{color:var(--accent);border-color:var(--line-2)}
+.fi-sel{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-height:34px;font-weight:600}
+.fi-sel.e-nuevo{border-color:var(--accent);color:var(--accent)}
+.fi-sel.e-presupuestado{border-color:var(--warn);color:var(--warn)}
+.fi-sel.e-mockup{border-color:var(--accent-2);color:var(--accent-2)}
+.fi-sel.e-produccion{border-color:var(--good);color:var(--good)}
+.fi-datos{display:flex;flex-wrap:wrap;gap:6px 22px}
+.fi-datos span{display:flex;flex-direction:column;font-size:14px}
+.fi-datos i{font:500 10px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-style:normal}
+.fi-imgs{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.fi-imgs img{width:92px;height:92px;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
+.fi-imgs img:hover{border-color:var(--line-2)}
+.fi-miss{font-size:12px;color:var(--ink-3)}
+.ficha details summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:13px}
+.ficha details .kv{margin-top:10px}
+.fi-acc{display:flex;gap:8px}

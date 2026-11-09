@@ -177,6 +177,9 @@ document.addEventListener("click",async function(ev){
   }catch(e){say(e&&e.message||"No se pudo descargar el archivo.");}
 },true);
 
+/* ---- llamadas directas al servidor para extensiones de la página (fichas del formulario) ---- */
+window.CRM_API={call:api,role:function(){return A.rol;}};
+
 /* ---- puerta de entrada para el resto de la aplicación ---- */
 window.claude={use:function(name){
   if(name==="db")return readyP.then(function(){return dbApi;});
